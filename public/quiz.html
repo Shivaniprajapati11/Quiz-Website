@@ -7,11 +7,23 @@
 <body>
 
 <div class="container">
-  <h2 id="username"></h2>
-  <h3 id="question"></h3>
+  <h2>Quiz App</h2>
 
-  <button id="btnA" onclick="checkAnswer('A')"></button>
-  <button id="btnB" onclick="checkAnswer('B')"></button>
+  <div class="progress">
+    <div id="progress-bar"></div>
+  </div>
+
+  <p id="question"></p>
+
+  <button class="option" onclick="selectAnswer('A')" id="A"></button>
+  <button class="option" onclick="selectAnswer('B')" id="B"></button>
+  <button class="option" onclick="selectAnswer('C')" id="C"></button>
+  <button class="option" onclick="selectAnswer('D')" id="D"></button>
+
+  <div class="nav">
+    <button onclick="prevQuestion()">⬅ Back</button>
+    <button onclick="nextQuestion()">Next ➡</button>
+  </div>
 </div>
 
 <script src="script.js"></script>

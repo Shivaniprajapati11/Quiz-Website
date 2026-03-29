@@ -4,40 +4,57 @@ body {
 }
 
 .container {
-  width: 600px;        
-  max-width: 90%;      
+  width: 600px;
+  max-width: 90%;
   margin: 80px auto;
   background: white;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
 }
 
-button {
+.option {
   width: 100%;
   padding: 10px;
-  margin: 5px;
+  margin: 6px;
   border-radius: 10px;
   border: none;
   background: #eee;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-button:hover {
+.option:hover {
   background: #ddd;
 }
 
-#nextBtn {
+/* Selected option */
+.selected {
+  background: #4a00e0 !important;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nav button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
   background: #4a00e0;
   color: white;
 }
 
 .progress {
   width: 100%;
-  background: #ddd;
   height: 10px;
+  background: #ddd;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #progress-bar {

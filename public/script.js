@@ -111,7 +111,7 @@ function calculateScore() {
 
   document.querySelector(".container").innerHTML =
     `<h2>🎉 Completed</h2>
-     <h3>Your Score: ${score}</h3>`;
+     <h3>Your Score: ${score}/${questions.length}</h3>`;
 }
 
 load();
