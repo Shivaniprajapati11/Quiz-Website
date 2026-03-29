@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 Smart Quiz</h1>
+  <p>Test your knowledge</p>
+
+  <input type="text" id="username" placeholder="Enter your name">
+
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<script>
+function startQuiz() {
+  let user = document.getElementById("username").value;
+  localStorage.setItem("user", user);
+  window.location = "quiz.html";
+}
+</script>
+
+</body>
+</html>

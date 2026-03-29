@@ -1,0 +1,48 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.container {
+  width: 600px;        
+  max-width: 90%;      
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+#nextBtn {
+  background: #4a00e0;
+  color: white;
+}
+
+.progress {
+  width: 100%;
+  background: #ddd;
+  height: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#progress-bar {
+  height: 10px;
+  width: 0%;
+  background: blue;
+  border-radius: 10px;
+}
