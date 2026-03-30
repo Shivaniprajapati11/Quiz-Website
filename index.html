@@ -6,20 +6,35 @@
 </head>
 <body>
 
-<div class="container">
-  <h1>🧠 Smart Quiz</h1>
-  <p>Test your knowledge</p>
+<div class="card">
+  <h1>🎓 Student Quiz</h1>
 
-  <input type="text" id="username" placeholder="Enter your name">
+  <input id="name" placeholder="Enter Your Name">
 
-  <button onclick="startQuiz()">Start Quiz</button>
+  <h3>Select Subject</h3>
+
+  <button onclick="start('HTML')">HTML</button>
+  <button onclick="start('CSS')">CSS</button>
+  <button onclick="start('JavaScript')">JavaScript</button>
+  <button onclick="start('DBMS')">DBMS</button>
+  <button onclick="start('JAVA')">JAVA</button>
 </div>
 
 <script>
-function startQuiz() {
-  let user = document.getElementById("username").value;
-  localStorage.setItem("user", user);
-  window.location = "quiz.html";
+function start(subject){
+  let name = document.getElementById("name").value;
+
+  if(name === ""){
+    alert("Enter name");
+    return;
+  }
+
+  localStorage.setItem("name", name);
+  localStorage.setItem("subject", subject);
+  localStorage.setItem("index", 0);
+  localStorage.setItem("score", 0);
+
+  window.location.href = "quiz.html";
 }
 </script>
 

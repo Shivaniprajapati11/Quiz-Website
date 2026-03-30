@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>📊 Result</h1>
+
+  <h2 id="name"></h2>
+  <h2 id="score"></h2>
+
+  <button onclick="home()">Home</button>
+</div>
+
+<script>
+document.getElementById("name").innerText =
+localStorage.getItem("name");
+
+document.getElementById("score").innerText =
+"Score: " + localStorage.getItem("score") + "/7";
+
+function home(){
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
